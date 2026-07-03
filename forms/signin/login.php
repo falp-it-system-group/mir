@@ -1,18 +1,7 @@
 <form class="form-horizontal" action="<?php echo $system; ?>/api/common/login.php" method="POST">
     <div class="form-group">
         <div class="input-group">
-            <input type="text" class="form-control" id="username" name="username" placeholder="Username" autocomplete="off" maxlength="255" required autofocus>
-            <div class="input-group-append">
-                <div class="input-group-text">
-                    <span class="fas fa-user"></span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <div class="input-group">
-            <input type="password" class="form-control" id="password" name="password" placeholder="Password" autocomplete="off" maxlength="255" required>
+            <input type="password" class="form-control" id="emp_no" name="emp_no" placeholder="Employee No." autocomplete="off" maxlength="255" required>
             <div class="input-group-append">
                 <div class="input-group-text">
                     <span class="fas fa-lock"></span>

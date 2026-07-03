@@ -1,0 +1,4300 @@
+{
+  "documentNo": "MEI-030F1",
+  "revisionNo": "16",
+  "documentName": "Daily Inspection Standard of Automatic Cutting & Crimping Machine TRD411F/WPA",
+  "document": [
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "id": "document_no",
+          "class": "col-sm-8",
+          "text": "MEI-030F1"
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "id": "revision_no",
+          "class": "col-sm-4",
+          "text": "16"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "column",
+          "element": "h3",
+          "id": "document_name",
+          "class": "col-8 font-weight-bold",
+          "text": "Daily Inspection Standard of Automatic Cutting & Crimping Machine TRD411F/WPA"
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-2",
+          "text": "",
+          "answerInputs": [
+            {
+              "label": "Car Model",
+              "type": "text",
+              "id": "car_model",
+              "name": "car_model",
+              "maxlength": "255"
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-2",
+          "text": "",
+          "answerInputs": [
+            {
+              "label": "Shift",
+              "type": "text",
+              "id": "shift",
+              "name": "shift",
+              "maxlength": "255"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-4",
+          "text": "",
+          "answerInputs": [
+            {
+              "label": "Machine Name",
+              "type": "text",
+              "id": "machine_name",
+              "name": "machine_name",
+              "maxlength": "255"
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-4",
+          "text": "",
+          "answerInputs": [
+            {
+              "label": "Machine No",
+              "type": "text",
+              "id": "machine_no",
+              "name": "machine_no",
+              "maxlength": "255"
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-4",
+          "text": "",
+          "answerInputs": [
+            {
+              "label": "Equipment No",
+              "type": "text",
+              "id": "equipment_no",
+              "name": "equipment_no",
+              "maxlength": "255"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "descriptions": [
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-12",
+          "text": "※ Machine Number = Serial number of the equipment manufacturer ; Equipment Number = Control number set by FAS"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-12",
+          "text": "※ In case an NG was found, production associate should report to the production junior staff, staff or supervisor. Then equipment member will do the repair and perform a special inspection. After the repair and special inspection has been completed by the equipment member, production junior staff should correct the X with a double slash and put circle in it. Lastly, production junior staff will affix her signature as a confirmation. An Asterisk (*) is an indication for Safety & Devices Inspection."
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-12",
+          "text": "*A Production Associate shall input the Next Inspection Date on the Space provided the Status of \"Next PM Date\". He / She shall put \"O\" if the PM Date is still Valid and an \"X\" if the Date is Expired on the Inspection Sheet and to be confirmed by Jr. Staff or Above."
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "column",
+          "element": "h4",
+          "class": "col-12 font-weight-bold",
+          "text": "Describing Symbols: ◯ ＝ Normal/OK   △ ＝ Adjust/Clean   ✕ ＝ NG   ／ ＝ Not Applicable"
+        }
+      ]
+    }
+  ],
+  "radioTemplate": {
+    "inspection": [
+      {
+        "value": "1",
+        "label": "◯"
+      },
+      {
+        "value": "2",
+        "label": "△"
+      },
+      {
+        "value": "3",
+        "label": "✕"
+      },
+      {
+        "value": "4",
+        "label": "/"
+      }
+    ]
+  },
+  "inspectionGroupsTitle": [
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "column",
+          "element": "h3",
+          "class": "col-sm-8 font-weight-bold",
+          "text": "[Items/Judgment Standards]"
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-sm-4",
+          "text": "",
+          "answerInputs": [
+            {
+              "label": "Inspection Date",
+              "type": "date",
+              "id": "inspection_date",
+              "name": "inspection_date"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "inspectionGroups": [
+    {
+      "groupId": "1",
+      "isSafety": "true",
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "title",
+          "element": "h4",
+          "id": "cont_title1",
+          "class": "font-weight-bold",
+          "text": "*1. Checking of Safety Items and Importantly Needed Tools:"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item1a",
+                  "class": "",
+                  "text": "a. Emergency Stop Button."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q1a",
+                  "class": "",
+                  "text": "a) Checking the Emergency Stop Button. (Functional & Working)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_1a_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item1b",
+                  "class": "",
+                  "text": "b. Up/Down Safety Cover."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q1b",
+                  "class": "",
+                  "text": "b) Up/Down Safety Cover must be Functional & Working. (No Damage/Crack, Not Blurred"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_1b_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item1c",
+                  "class": "",
+                  "text": "c. Slide Cutter Plate."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q1c",
+                  "class": "",
+                  "text": "c). Slide Cutter Plate. (In Good Condition)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_1c_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item1d",
+                  "class": "",
+                  "text": "d. Terminal Guide Plate."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q1d",
+                  "class": "",
+                  "text": "d). Guide Plate.[Available, In Good Condition, No Damage]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_1d_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item1e",
+                  "class": "",
+                  "text": "e. Industrial Cutter."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q1e",
+                  "class": "",
+                  "text": "e). Industrial Cutter.[Available, In Good Condition, No Damage]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_1e_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item1f",
+                  "class": "",
+                  "text": "f. String Cutter."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q1f",
+                  "class": "",
+                  "text": "f). String Cutter.[Available, In Good Condition, No Damage]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_1f_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "2",
+      "isSafety": "true",
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "title",
+          "element": "h4",
+          "id": "cont_title2",
+          "class": "font-weight-bold",
+          "text": "*2. Check the Regulator & Regulator Lock. (if Properly Locked)."
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item2a",
+                  "class": "",
+                  "text": "a. Air Pressure."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q2a",
+                  "class": "",
+                  "text": "a. Air Pressure Gauge: 0.50 ±0.05 Mpa"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "Mpa",
+              "type": "number",
+              "name": "cont_2a_n_trd_i",
+              "step": "0.01"
+            },
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_2a_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item2b",
+                  "class": "",
+                  "text": "b. Remained Water."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q2b",
+                  "class": "",
+                  "text": "b. No remained Water."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_2b_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item2c",
+                  "class": "",
+                  "text": "c. F Clamp. 【Unit：：MPa】"
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q2c",
+                  "class": "",
+                  "text": "c. F Clamp: 0.40 ± 0.05 Mpa."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "Mpa",
+              "type": "number",
+              "name": "cont_2c_n_trd_i",
+              "step": "0.01"
+            },
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_2c_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item2d",
+                  "class": "",
+                  "text": "d. R Clamp. 【Unit：：MPa】"
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q2d",
+                  "class": "",
+                  "text": "d. R Clamp: 0.40 ± 0.05 Mpa."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "Mpa",
+              "type": "number",
+              "name": "cont_2d_n_trd_i",
+              "step": "0.01"
+            },
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_2d_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item2e",
+                  "class": "",
+                  "text": "e. Feed Belt. 【Unit：：MPa】"
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q2e",
+                  "class": "",
+                  "text": "e. Feed Belt: 0.30 ± 0.05 Mpa."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "Mpa",
+              "type": "number",
+              "name": "cont_2e_n_trd_i",
+              "step": "0.01"
+            },
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_2e_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "3",
+      "isSafety": "true",
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "title",
+          "element": "h4",
+          "id": "cont_title3",
+          "class": "font-weight-bold",
+          "text": "*3. Check the Lens of Strip Sensor / Seal Mis-Inserting Sensor.(No Dust or No Dirt)."
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item3a",
+                  "class": "",
+                  "text": ""
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q3a",
+                  "class": "",
+                  "text": "F Side Sensor: (Strip Sensor / Mis-Inserting)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_3a_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item3b",
+                  "class": "",
+                  "text": ""
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q3b",
+                  "class": "",
+                  "text": "R Side Sensor: (Strip Sensor / Mis-Inserting)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_3b_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "4",
+      "isSafety": "true",
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "title",
+          "element": "h4",
+          "id": "cont_title4",
+          "class": "font-weight-bold",
+          "text": "*4. Check the Movement of the Strip Sensor."
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item4a",
+                  "class": "",
+                  "text": "a. F Side “Mis-Stripping”. [Functional Test]"
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q4a",
+                  "class": "",
+                  "text": "a. NG Judgment at F Side “Mis-Stripping”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_4a_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item4b",
+                  "class": "",
+                  "text": "b. R Side “Mis-Stripping”. [Functional Test]"
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q4b",
+                  "class": "",
+                  "text": "b. NG Judgment at R Side “Mis-Stripping”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_4b_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "5",
+      "isSafety": "true",
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "title",
+          "element": "h4",
+          "id": "cont_title5",
+          "class": "font-weight-bold",
+          "text": "*5. Check the Seal Mis-Insertion Sensor."
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item5a",
+                  "class": "",
+                  "text": "a. F Side “Seal Mis-Insertion”."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q5a",
+                  "class": "",
+                  "text": "a. NG Judgment at F Side “Seal Mis-Insertion”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_5a_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item5b",
+                  "class": "",
+                  "text": "b. R Side “Seal Mis-Insertion”."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q5b",
+                  "class": "",
+                  "text": "b. NG Judgment at R Side “Seal Mis-Insertion”."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_5b_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "6",
+      "isSafety": "true",
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "title",
+          "element": "h4",
+          "id": "cont_title6",
+          "class": "font-weight-bold",
+          "text": "6. Check the Crimp Force Monitor.a. F Side “Mis-Crimping”.b. R Side “Mis-Crimping”."
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item6a",
+                  "class": "",
+                  "text": "a. F Side “Mis-Crimping”."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q6a",
+                  "class": "",
+                  "text": "a. NG Judgment at “Mis-Crimping” for F Side."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_6a_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item6b",
+                  "class": "",
+                  "text": "b. R Side “Mis-Crimping”."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q6b",
+                  "class": "",
+                  "text": "b. NG Judgment at “Mis-Crimping” for R Side."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_6b_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "7",
+      "isSafety": "true",
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "title",
+          "element": "h4",
+          "id": "cont_title7",
+          "class": "font-weight-bold",
+          "text": "7. Check the Cleaning of the Following:"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item7a",
+                  "class": "",
+                  "text": "a. Strip Trash, Carrier Trash, Wire Core Trash."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q7a",
+                  "class": "",
+                  "text": "a. Check the Strip Trash, the Carrier Trash, the Wire Core Trash in the Machine."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_7a_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item7b",
+                  "class": "",
+                  "text": "b. Tools & Tools Distribution."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q7b",
+                  "class": "",
+                  "text": "b. Check the dispersion of the Tools and Tools are putted on Proper position."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_7b_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item7c",
+                  "class": "",
+                  "text": "c. Unnecessary Wires in the Machine."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q7c",
+                  "class": "",
+                  "text": "c. Check whether there is not an unnecessary Electric Wire around the Machine."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_7c_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item7d",
+                  "class": "",
+                  "text": "d. Applicators Position."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q7d",
+                  "class": "",
+                  "text": "d. Check whether an Applicator is returned to Proper position."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_7d_trd_i",
+              "radioTemplate": "inspection"
+            },
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_7d_trd_i2",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item7e",
+                  "class": "",
+                  "text": "e. Rubber Mat & Vinyl Sheet Cover."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q7e",
+                  "class": "",
+                  "text": "e. Clean the Terminal Line-Up Mat & Vinyl Sheet Cover and Check whether there is Damage."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_7e_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "8",
+      "isSafety": "false",
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "title",
+          "element": "h4",
+          "id": "cont_title8",
+          "class": "font-weight-bold",
+          "text": "8. Check the Oiler."
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item8a",
+                  "class": "",
+                  "text": ""
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q8a",
+                  "class": "",
+                  "text": "a. Oiler must be Available in R & F Side."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_8a_trd_i",
+              "radioTemplate": "inspection"
+            },
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_8a_trd_i2",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item8b",
+                  "class": "",
+                  "text": ""
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q8b",
+                  "class": "",
+                  "text": "b. Oiler Felt is Not Missing/Damage,"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_8b_trd_i",
+              "radioTemplate": "inspection"
+            },
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_8b_trd_i2",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item8c",
+                  "class": "",
+                  "text": ""
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q8c",
+                  "class": "",
+                  "text": "c. Oiler Magnet is Not Misssing/Damage."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_8c_trd_i",
+              "radioTemplate": "inspection"
+            },
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_8c_trd_i2",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item8d",
+                  "class": "",
+                  "text": ""
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q8d",
+                  "class": "",
+                  "text": "d. Oiler is Aligned to Insulation Barrel."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_8d_trd_i",
+              "radioTemplate": "inspection"
+            },
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_8d_trd_i2",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item8e",
+                  "class": "",
+                  "text": ""
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q8e",
+                  "class": "",
+                  "text": "e. Oiler has Oil, Good in Condition/Appearance)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_8e_trd_i",
+              "radioTemplate": "inspection"
+            },
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_8e_trd_i2",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "9",
+      "isSafety": "false",
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "title",
+          "element": "h4",
+          "id": "cont_title9",
+          "class": "font-weight-bold",
+          "text": "9. Check the Metal Wire Catcher condition."
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item9a",
+                  "class": "",
+                  "text": ""
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q9a",
+                  "class": "",
+                  "text": "Must be Present and in Good Condition. No Breakage and Loose Bolt."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_9a_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "10",
+      "isSafety": "false",
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "title",
+          "element": "h4",
+          "id": "cont_title10",
+          "class": "font-weight-bold",
+          "text": "10. Check the Condition of Paper Coiler."
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item10a",
+                  "class": "",
+                  "text": ""
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q10a",
+                  "class": "",
+                  "text": "No Lacking / Missing of Parts. Smooth Rotation of Coiling."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_10a_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "11",
+      "isSafety": "false",
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "title",
+          "element": "h4",
+          "id": "cont_title11",
+          "class": "font-weight-bold",
+          "text": "11. Check the Alignment of Seal Cassette to Seal"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item11a",
+                  "class": "",
+                  "text": ""
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q11a",
+                  "class": "",
+                  "text": "Must be Aligned with Seal Holder."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_11a_trd_i",
+              "radioTemplate": "inspection"
+            },
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_11a_trd_i2",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "12",
+      "isSafety": "true",
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "title",
+          "element": "h4",
+          "id": "cont_title12",
+          "class": "font-weight-bold",
+          "text": "*12. Check the LED Light of the AMP Unit."
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item12a",
+                  "class": "",
+                  "text": ""
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q12a",
+                  "class": "",
+                  "text": "Must be Both Front & Rear Sensor LED Light Blinking."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_12a_trd_i",
+              "radioTemplate": "inspection"
+            },
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_12a_trd_i2",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "inspectionGroups2Title": [
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "column",
+          "element": "h5",
+          "class": "col-12 font-weight-italic",
+          "text": "*For Items: [Pls. refer to Inspection Standard of Automatic Cutting, Stripping & Crimping Machine TRD 411F/WPA FALP-WI-MEI-AM-197.] Items: #13.b. / #14.b. / #15. d. & #20.b.c.d. (#18 & #19, #23 up to #29 / Not applicable for Operator Visual Checking), Only for PE 1 Repairs and Maintenance Only)"
+        }
+      ]
+    }
+  ],
+  "inspectionGroups2": [
+    {
+      "groupId": "13",
+      "isSafety": "false",
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "title",
+          "element": "h4",
+          "id": "cont_title13",
+          "class": "font-weight-bold",
+          "text": "13. a. Check the condition of the Blade"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item13a",
+                  "class": "",
+                  "text": ""
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q13a",
+                  "class": "",
+                  "text": "a. No Abrasions, No Chips or Crack."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_13a_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "14",
+      "isSafety": "false",
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "title",
+          "element": "h4",
+          "id": "cont_title14",
+          "class": "font-weight-bold",
+          "text": "14. Check the Condition of Feed Belt."
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item14a",
+                  "class": "",
+                  "text": ""
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q14a",
+                  "class": "",
+                  "text": "a.No Holes, No Cracks or Damage on Feed Belt."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_14a_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "15",
+      "isSafety": "false",
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "title",
+          "element": "h4",
+          "id": "cont_title15",
+          "class": "font-weight-bold",
+          "text": "15. Check the Condition of the Wire Straightener."
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item15a",
+                  "class": "",
+                  "text": ""
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q15a",
+                  "class": "",
+                  "text": "a. No Damage on the Roller."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_15a_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item15b",
+                  "class": "",
+                  "text": ""
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q15b",
+                  "class": "",
+                  "text": "b. No Missing Roller."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_15b_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item15c",
+                  "class": "",
+                  "text": ""
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q15c",
+                  "class": "",
+                  "text": "c. No Damage Spring."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_15c_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "16",
+      "isSafety": "false",
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "title",
+          "element": "h4",
+          "id": "cont_title16",
+          "class": "font-weight-bold",
+          "text": "16. Check the Condition of Parts Feeder. Including Gomusen Oil Remover:"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item16a",
+                  "class": "",
+                  "text": "a. Feeder Bowl."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q16a",
+                  "class": "",
+                  "text": "a. Feeder Bowl: (In Good Condition). (No Foreign Materials, No Dust, No Damage)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_16a_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item16b",
+                  "class": "",
+                  "text": "b. Air Pressure."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q16b",
+                  "class": "",
+                  "text": "b. Air Pressure Settings: (0.40 ± 0.05 Mpa)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "Mpa",
+              "type": "number",
+              "name": "cont_16b_n_trd_i",
+              "step": "0.01"
+            },
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_16b_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item16c",
+                  "class": "",
+                  "text": "c. Hose Fittings & Connections."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q16c",
+                  "class": "",
+                  "text": "c. Hose Fittings & Connections: (No Bend or Damage Hose and Fittings)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_16c_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item16d1",
+                  "class": "",
+                  "text": "d. Seal Escape Unit."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q16d1",
+                  "class": "",
+                  "text": "d. Seal Cassette Unit. (Aligned to Seal Holder)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_16d1_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item16d2",
+                  "class": "",
+                  "text": "d. Seal Escape Unit."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q16d2",
+                  "class": "",
+                  "text": "d. Seal Escape Unit. (Must have Safety Cover)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_16d2_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item16e",
+                  "class": "",
+                  "text": "e. Vinyl Plastic Cover."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q16e",
+                  "class": "",
+                  "text": "e. Vinyl Plastic Cover. (No Damage)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_16e_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item16f",
+                  "class": "",
+                  "text": "f. Railings."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q16f",
+                  "class": "",
+                  "text": "f. Railings. (No Dust & Foreign Materials)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_16f_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item16g",
+                  "class": "",
+                  "text": "g. Gomusen Oil Remover Components:"
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q16g",
+                  "class": "",
+                  "text": "g. Gomusen Oil Remover Components:(Check All Parts Condition)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_16g_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item16g1",
+                  "class": "",
+                  "text": "1. Check Working / Rolling."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q16g1",
+                  "class": "",
+                  "text": "1. Working/Rolling?"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_16g1_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item16g2",
+                  "class": "",
+                  "text": "2. No Missing Rubber."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q16g2",
+                  "class": "",
+                  "text": "2. No Missing Rubber?"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_16g2_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item16g3",
+                  "class": "",
+                  "text": "3. Jar No Damage."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q16g3",
+                  "class": "",
+                  "text": "3. Jar No Damage?"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_16g3_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item16g4",
+                  "class": "",
+                  "text": "4. Cover must be Tight."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q16g4",
+                  "class": "",
+                  "text": "4. Cover must be Tight?"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_16g4_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item16g5",
+                  "class": "",
+                  "text": "5. Complete Label."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q16g5",
+                  "class": "",
+                  "text": "5. Complete Label?"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_16g5_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item16g6",
+                  "class": "",
+                  "text": "6. Rags Absorbing Oil."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q16g6",
+                  "class": "",
+                  "text": "6. Rags Absorbing Oil?"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_16g6_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "17",
+      "isSafety": "false",
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "title",
+          "element": "h4",
+          "id": "cont_title17",
+          "class": "font-weight-bold",
+          "text": "17. Check the Condition of Wire Supply including Wire Sensor / Wire Tangle Sensor & Wire Run Out Sensor."
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item17a",
+                  "class": "",
+                  "text": "a. Wire Tangle Sensor Condition."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q17a",
+                  "class": "",
+                  "text": "a. Wire Supply: Wire Sensors / Wire Tangle Sensors Condition: (No Damage, Not Loose and Properly Fixed in Position)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_17a_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item17b",
+                  "class": "",
+                  "text": "b. Wire Spring Condition."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q17b",
+                  "class": "",
+                  "text": "b. Wire Supply: Wire Spring Condition. (Present / Not Bend.)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_17b_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item17c",
+                  "class": "",
+                  "text": "c. Wire Entry Eyelet & Hoop Guide."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q17c",
+                  "class": "",
+                  "text": "c. Wire Supply: Bolt Tightening & Hoop Guide Condition. (Must be Tight.)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_17c_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item17d",
+                  "class": "",
+                  "text": "d. Basket Guide Condition."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q17d",
+                  "class": "",
+                  "text": "d. Wire Supply: Basket Guide Condition. (No Damage or Loose Attachment.)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_17d_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item17e",
+                  "class": "",
+                  "text": "e. Vinyl Plastic Covers Condition."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q17e",
+                  "class": "",
+                  "text": "e. Wire Supply: Vinyl Plastic Cover's Condition. (No Damage.)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_17e_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item17f",
+                  "class": "",
+                  "text": "f. Wire Guide Condition."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q17f",
+                  "class": "",
+                  "text": "f. Wire Supply: Wire Guide Condition. (No Damage.)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_17f_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item17g",
+                  "class": "",
+                  "text": "g. Check the Wire Run Out Sensor."
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q17g",
+                  "class": "",
+                  "text": "g. Wire Run Out Sensor: (Must be Functioning)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_17g_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "inspectionGroups3Title": [
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "column",
+          "element": "h3",
+          "class": "col-12 font-weight-bold",
+          "text": "TRD Nozzle Condition Checking (Nozzle Sizes)"
+        }
+      ]
+    }
+  ],
+  "inspectionGroups3": [
+    {
+      "groupId": "20a",
+      "isSafety": "false",
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "title",
+          "element": "h4",
+          "id": "cont_title20a",
+          "class": "font-weight-bold",
+          "text": "1. Damage Check (No abbrasion, No Scratch). / 2. Check Center Alignment (No obstruction and correct)"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item20aa",
+                  "class": "",
+                  "text": ""
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q20aa",
+                  "class": "",
+                  "text": "13"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_20aa_trd_i",
+              "radioTemplate": "inspection"
+            },
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_20aa_trd_i2",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item20ab",
+                  "class": "",
+                  "text": ""
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q20ab",
+                  "class": "",
+                  "text": "15"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_20ab_trd_i",
+              "radioTemplate": "inspection"
+            },
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_20ab_trd_i2",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item20ac",
+                  "class": "",
+                  "text": ""
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q20ac",
+                  "class": "",
+                  "text": "17"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_20ac_trd_i",
+              "radioTemplate": "inspection"
+            },
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_20ac_trd_i2",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item20ad",
+                  "class": "",
+                  "text": ""
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q20ad",
+                  "class": "",
+                  "text": "17"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_20ad_trd_i",
+              "radioTemplate": "inspection"
+            },
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_20ad_trd_i2",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item20ae",
+                  "class": "",
+                  "text": ""
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q20ae",
+                  "class": "",
+                  "text": "22"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_20ae_trd_i",
+              "radioTemplate": "inspection"
+            },
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_20ae_trd_i2",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item20af",
+                  "class": "",
+                  "text": ""
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q20af",
+                  "class": "",
+                  "text": "25"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_20af_trd_i",
+              "radioTemplate": "inspection"
+            },
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_20af_trd_i2",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item20ag",
+                  "class": "",
+                  "text": ""
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q20ag",
+                  "class": "",
+                  "text": "30"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_20ag_trd_i",
+              "radioTemplate": "inspection"
+            },
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_20ag_trd_i2",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item20ah",
+                  "class": "",
+                  "text": ""
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q20ah",
+                  "class": "",
+                  "text": "35"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_20ah_trd_i",
+              "radioTemplate": "inspection"
+            },
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_20ah_trd_i2",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item20ai",
+                  "class": "",
+                  "text": ""
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q20ai",
+                  "class": "",
+                  "text": "40"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_20ai_trd_i",
+              "radioTemplate": "inspection"
+            },
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_20ai_trd_i2",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item20aj",
+                  "class": "",
+                  "text": ""
+                },
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_q20aj",
+                  "class": "",
+                  "text": "45"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_20aj_trd_i",
+              "radioTemplate": "inspection"
+            },
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_20aj_trd_i2",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "20b",
+      "isSafety": "false",
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "title",
+          "element": "h4",
+          "id": "cont_title20b",
+          "class": "font-weight-bold",
+          "text": "20. Check the Condition of the Electric Wire Passage Lines. (Eyelet)."
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item20b",
+                  "class": "",
+                  "text": "20. Check the Condition of the Electric Wire Passage Lines. (Eyelet). (No Abrasion, Damage, Scratch & Missing)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_20ab_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "21",
+      "isSafety": "false",
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "title",
+          "element": "h4",
+          "id": "cont_title21",
+          "class": "font-weight-bold",
+          "text": "21. Check on Work Screen"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item21",
+                  "class": "",
+                  "text": "21. Check on Work Screen, \"Operator Level = (0), Must be LOG IN\"."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_21_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "30",
+      "isSafety": "false",
+      "type": "row",
+      "element": "div",
+      "class": "row",
+      "children": [
+        {
+          "type": "title",
+          "element": "h4",
+          "id": "cont_title30",
+          "class": "font-weight-bold",
+          "text": "30. Check the Barcode Label vs. Actual, No Faded Barcode Label"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_item30",
+                  "class": "",
+                  "text": "30. Check the Barcode Label vs. Actual, No Faded Barcode Label. [Applicator]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_30_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_npd",
+                  "class": "",
+                  "text": "Next PM Date: (Month - Year)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "type": "month",
+              "id": "cont_npd_d_trd_i",
+              "name": "cont_npd_d_trd_i"
+            },
+            {
+              "suffix": "",
+              "type": "radio",
+              "name": "cont_npd_trd_i",
+              "radioTemplate": "inspection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_inspected_by_label",
+                  "class": "",
+                  "text": "Inspected By: (Associate)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "type": "text",
+              "id": "cont_inspected_by",
+              "name": "cont_inspected_by",
+              "maxlength": "255"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "element": "div",
+      "class": "row mb-2",
+      "children": [
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-8 col-sm-12",
+          "children": [
+            {
+              "type": "form-group",
+              "element": "div",
+              "class": "form=group mb-0",
+              "children": [
+                {
+                  "type": "text",
+                  "element": "h5",
+                  "id": "cont_confirmed_by_label",
+                  "class": "",
+                  "text": "Confirmed By: (Jr. Staff or Above)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "element": "div",
+          "class": "col-lg-4",
+          "answerInputs": [
+            {
+              "type": "text",
+              "id": "cont_confirmed_by",
+              "name": "cont_confirmed_by",
+              "maxlength": "255"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

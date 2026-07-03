@@ -1,0 +1,359 @@
+documentNo = MEI-030F1
+checksheetNo = 
+machineName = Automatic Cutting & Crimping Machine
+machineNo = 65635
+equipmentNo = 72078-01
+carModel = D01L
+shift = B
+inspectionDate = 2024-09-09
+nextPmDate = 2024-11
+inspectedBy = 22-08675
+confirmedBy = 22-08675
+validationJudgementNextPmDate = 1
+inspectionGroups[]
+  groupId = 1
+  items[]
+    id = a
+    answer = 1
+  items[]
+    id = b
+    answer = 1
+  items[]
+    id = c
+    answer = 1
+  items[]
+    id = d
+    answer = 1
+  items[]
+    id = e
+    answer = 1
+  items[]
+    id = f
+    answer = 1
+inspectionGroups[]
+  groupId = 2
+  items[]
+    id = a
+    answers[]
+      answer = 0.55
+      suffix = Mpa ǀ
+    answers[]
+      answer = 1
+  items[]
+    id = b
+    answer = 1
+  items[]
+    id = c
+    answers[]
+      answer = 0.45
+      suffix = Mpa ǀ
+    answers[]
+      answer = 1
+  items[]
+    id = d
+    answers[]
+      answer = 0.45
+      suffix = Mpa ǀ
+    answers[]
+      answer = 1
+  items[]
+    id = e
+    answers[]
+      answer = 0.35
+      suffix = Mpa ǀ
+    answers[]
+      answer = 1
+inspectionGroups[]
+  groupId = 3
+  items[]
+    id = a
+    answer = 1
+  items[]
+    id = b
+    answer = 1
+inspectionGroups[]
+  groupId = 4
+  items[]
+    id = a
+    answer = 1
+  items[]
+    id = b
+    answer = 1
+inspectionGroups[]
+  groupId = 5
+  items[]
+    id = a
+    answer = 1
+  items[]
+    id = b
+    answer = 1
+inspectionGroups[]
+  groupId = 6
+  items[]
+    id = a
+    answer = 1
+  items[]
+    id = b
+    answer = 1
+inspectionGroups[]
+  groupId = 7
+  items[]
+    id = a
+    answer = 1
+  items[]
+    id = b
+    answer = 1
+  items[]
+    id = c
+    answer = 1
+  items[]
+    id = d
+    answers[]
+      answer = 1
+      suffix = ǀ
+    answers[]
+      answer = 1
+  items[]
+    id = e
+    answer = 1
+inspectionGroups[]
+  groupId = 8
+  items[]
+    id = a
+    answers[]
+      answer = 1
+      suffix = ǀ
+    answers[]
+      answer = 1
+  items[]
+    id = b
+    answers[]
+      answer = 1
+      suffix = ǀ
+    answers[]
+      answer = 1
+  items[]
+    id = c
+    answers[]
+      answer = 1
+      suffix = ǀ
+    answers[]
+      answer = 1
+  items[]
+    id = d
+    answers[]
+      answer = 1
+      suffix = ǀ
+    answers[]
+      answer = 1
+  items[]
+    id = e
+    answers[]
+      answer = 1
+      suffix = ǀ
+    answers[]
+      answer = 1
+inspectionGroups[]
+  groupId = 9
+  items[]
+    id = a
+    answer = 1
+inspectionGroups[]
+  groupId = 10
+  items[]
+    id = a
+    answer = 1
+inspectionGroups[]
+  groupId = 11
+  items[]
+    id = a
+    answers[]
+      answer = 1
+      suffix = ǀ
+    answers[]
+      answer = 1
+inspectionGroups[]
+  groupId = 12
+  items[]
+    id = a
+    answers[]
+      answer = 1
+      suffix = ǀ
+    answers[]
+      answer = 1
+inspectionGroups2[]
+  groupId = 13
+  items[]
+    id = a
+    answer = 1
+inspectionGroups2[]
+  groupId = 14
+  items[]
+    id = a
+    answer = 1
+inspectionGroups2[]
+  groupId = 15
+  items[]
+    id = a
+    answer = 1
+  items[]
+    id = b
+    answer = 1
+  items[]
+    id = c
+    answer = 1
+inspectionGroups2[]
+  groupId = 16
+  items[]
+    id = a
+    answer = 1
+  items[]
+    id = b
+    answers[]
+      answer = 0.45
+      suffix = Mpa ǀ
+    answers[]
+      answer = 1
+  items[]
+    id = c
+    answer = 1
+  items[]
+    id = d1
+    answer = 1
+  items[]
+    id = d2
+    answer = 1
+  items[]
+    id = e
+    answer = 1
+  items[]
+    id = f
+    answer = 1
+  items[]
+    id = g
+    answer = 1
+  items[]
+    id = g1
+    answer = 1
+  items[]
+    id = g2
+    answer = 1
+  items[]
+    id = g3
+    answer = 1
+  items[]
+    id = g4
+    answer = 1
+  items[]
+    id = g5
+    answer = 1
+inspectionGroups2[]
+  groupId = 17
+  items[]
+    id = a
+    answer = 1
+  items[]
+    id = b
+    answer = 1
+  items[]
+    id = c
+    answer = 1
+  items[]
+    id = d
+    answer = 1
+  items[]
+    id = e
+    answer = 1
+  items[]
+    id = f
+    answer = 1
+  items[]
+    id = g
+    answer = 1
+inspectionGroups3[]
+  groupId = 20a
+  items[]
+    id = a
+    answers[]
+      answer = 1
+      suffix = ǀ
+    answers[]
+      answer = 1
+  items[]
+    id = b
+    answers[]
+      answer = 1
+      suffix = ǀ
+    answers[]
+      answer = 1
+  items[]
+    id = c
+    answers[]
+      answer = 1
+      suffix = ǀ
+    answers[]
+      answer = 1
+  items[]
+    id = d
+    answers[]
+      answer = 1
+      suffix = ǀ
+    answers[]
+      answer = 1
+  items[]
+    id = e
+    answers[]
+      answer = 1
+      suffix = ǀ
+    answers[]
+      answer = 1
+  items[]
+    id = f
+    answers[]
+      answer = 1
+      suffix = ǀ
+    answers[]
+      answer = 1
+  items[]
+    id = g
+    answers[]
+      answer = 1
+      suffix = ǀ
+    answers[]
+      answer = 1
+  items[]
+    id = h
+    answers[]
+      answer = 1
+      suffix = ǀ
+    answers[]
+      answer = 1
+  items[]
+    id = i
+    answers[]
+      answer = 1
+      suffix = ǀ
+    answers[]
+      answer = 1
+  items[]
+    id = j
+    answers[]
+      answer = 1
+      suffix = ǀ
+    answers[]
+      answer = 1
+inspectionGroups3[]
+  groupId = 20b
+  items[]
+    id = a
+    answer = 1
+inspectionGroups3[]
+  groupId = 21
+  items[]
+    id = a
+    answer = 1
+inspectionGroups3[]
+  groupId = 22
+  items[]
+    id = a
+    answer = 1

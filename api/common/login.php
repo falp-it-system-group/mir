@@ -1,20 +1,23 @@
 <?php
-    include '../common/db_connection.php';
+    include '../common/db_connection_emp_mgt.php';
     include '../common/imports.php';
     include '../common/sessions.php';
 
-    $sql = "EXEC user_GET_login :Username, :Password";
+    $sql = "EXEC employees_GET_employee :EmpNo";
 
     $stmt = $conn -> prepare($sql);
 
-    $stmt -> bindValue(":Username", trim($_POST['username']));
-    $stmt -> bindValue(":Password",trim($_POST['password']));
+    $stmt -> bindValue(":EmpNo",trim($_POST['emp_no']));
     $stmt -> execute();
 
     if ($data = $stmt -> fetch(PDO::FETCH_ASSOC)) {
         $user_data = [
-            'name' => $data['name'],
-            'role' => $data['role']
+            'emp_no' => $data['emp_no'],
+            'full_name' => $data['full_name'],
+            'dept' => $data['dept'],
+            'section' => $data['section'],
+            'line_no' => $data['line_no'],
+            'position' => $data['position']
         ];
         $_SESSION['user'] = $user_data;
         $notification = [
@@ -22,12 +25,12 @@
             "text" => "Login Successful",
         ];
         $_SESSION['notification'] = json_encode($notification);
-        header("location: {$system}/pages/dashboard");
+        header("location: {$system}/pages/checksheet");
         exit();
     } else {
         $notification = [
             "icon" => "error",
-            "text" => "Bad username and/or password",
+            "text" => "Bad Employee No.",
         ];
         $_SESSION['notification'] = json_encode($notification);
         header("location: {$system}/pages/signin");

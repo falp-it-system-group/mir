@@ -26,16 +26,10 @@
 	<div class="collapse navbar-collapse order-3" id="navbarCollapse">
 		<!-- Left navbar links -->
 		<ul class="navbar-nav">
-			<?php if ($_SERVER['REQUEST_URI'] == $system . '/pages/dashboard/') { ?>
-			<li class="nav-item"><a class="nav-link active" href="<?php echo $system . '/pages/dashboard/' ?>">Dashboard</a></li>
+			<?php if ($_SERVER['REQUEST_URI'] == $system . '/pages/checksheet/') { ?>
+			<li class="nav-item"><a class="nav-link active" href="<?php echo $system . '/pages/checksheet/' ?>">Checksheet</a></li>
 			<?php } else { ?>
-			<li class="nav-item"><a class="nav-link" href="<?php echo $system . '/pages/dashboard/' ?>">Dashboard</a></li>
-			<?php } ?>
-
-			<?php if ($_SERVER['REQUEST_URI'] == $system . '/pages/claim/') { ?>
-			<li class="nav-item"><a class="nav-link active" href="<?php echo $system . '/pages/claim/' ?>">Machine Inspection Record</a></li>
-			<?php } else { ?>
-			<li class="nav-item"><a class="nav-link" href="<?php echo $system . '/pages/claim/' ?>">Machine Inspection Record</a></li>
+			<li class="nav-item"><a class="nav-link" href="<?php echo $system . '/pages/checksheet/' ?>">Checksheet</a></li>
 			<?php } ?>
 
 			<li class="nav-item">
