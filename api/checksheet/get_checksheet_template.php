@@ -11,7 +11,7 @@ function renderNode($node, $radioTemplates)
     }
 
     if (!empty($node['class'])) {
-        echo ' class="' . $node['class'] . ' border-bottom border-2 p-2"';
+        echo ' class="' . $node['class'] . ' node-element border-2 p-2"';
     }
 
     echo '>';
@@ -33,10 +33,17 @@ function renderNode($node, $radioTemplates)
 
         echo '<div class="row">';
 
+        $totalAnswerInputs = count($node['answerInputs']);
+        $counterAnswerInputs = 0;
+
         foreach ($node['answerInputs'] as $answer) {
             renderAnswer($answer, $radioTemplates);
-            if (count($node['answerInputs']) > 1) {
-                echo '<div class="border-right border-2"></div>';
+
+            $counterAnswerInputs++; // Increment counter on every loop
+
+            // Only echo the div if this is not the last item
+            if ($counterAnswerInputs < $totalAnswerInputs) { 
+                echo '<div class="border-right border-2"></div>'; 
             }
         }
 
@@ -169,13 +176,33 @@ function renderAnswer($answer, $radioTemplates)
             </div>';
 
             break;
+        case 'hidden':
+            $id = $answer['name'];
+
+            echo '<input
+                        type="hidden"
+                        id="' . $id . '"
+                        name="' . $answer['name'] . '"
+                        value="' . $answer['value'] . '">';
+
+            break;
     }
 }
 
+$document_no = isset($_GET['document_no']) ? $_GET['document_no'] : '';
+
+if (empty($document_no)) {
+    $conn = null;
+    exit("Must have document no to display checksheet form");
+}
+
 // Get checksheet template json
-$sql = "EXEC chksht_GET_trd_latest";
+$sql = "EXEC chksht_GET_trd_latest :documentNo";
 
 $stmt = $conn->prepare($sql);
+
+$stmt->bindValue(':documentNo', trim($document_no), PDO::PARAM_STR);
+
 $stmt->execute();
 
 $row = $stmt->fetch(PDO::FETCH_ASSOC);

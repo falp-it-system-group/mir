@@ -11,6 +11,14 @@
         <?php 
             include $root . 'api/common/imports.php';
         ?>
+        <style>
+            #mir_checksheet_form > .node-element {
+                border-bottom: 1px solid #dee2e6!important
+            }
+            h5 {
+                padding-left: 2rem;
+            }
+        </style>
 	</head>
 
 	<body class="hold-transition layout-top-nav accent-primary">

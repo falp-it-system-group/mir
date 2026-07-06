@@ -90,7 +90,7 @@ document[]
       suffix = 
       type = radio
       name = next_pm_date_confirmation
-      radioTemplate = inspection
+      radioTemplate = inspection2
 document[]
   type = row
   element = div

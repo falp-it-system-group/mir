@@ -9,15 +9,25 @@ document[]
   children[]
     type = column
     element = div
-    id = document_no
+    id = document_no_label
     class = col-sm-8
     text = MEI-030F1
+    answerInputs[]
+      type = hidden
+      id = document_no
+      name = document_no
+      value = MEI-030F1
   children[]
     type = column
     element = div
-    id = revision_no
+    id = revision_no_label
     class = col-sm-4
     text = 16
+    answerInputs[]
+      type = hidden
+      id = revision_no
+      name = revision_no
+      value = 16
 document[]
   type = row
   element = div
@@ -57,7 +67,22 @@ document[]
   children[]
     type = column
     element = div
-    class = col-4
+    class = col-3
+    text = 
+    children[]
+      type = row
+      element = div
+      class = row font-weight-bold
+      text = Regular Inspection Check
+    children[]
+      type = row
+      element = div
+      class = row font-weight-bold
+      text = Inspection Results
+  children[]
+    type = column
+    element = div
+    class = col-3
     text = 
     answerInputs[]
       label = Machine Name
@@ -68,7 +93,7 @@ document[]
   children[]
     type = column
     element = div
-    class = col-4
+    class = col-3
     text = 
     answerInputs[]
       label = Machine No
@@ -79,7 +104,7 @@ document[]
   children[]
     type = column
     element = div
-    class = col-4
+    class = col-3
     text = 
     answerInputs[]
       label = Equipment No
@@ -138,6 +163,12 @@ radioTemplate
   inspection[]
     value = 4
     label = /
+  inspection2[]
+    value = 1
+    label = ◯
+  inspection2[]
+    value = 3
+    label = ✕
 
 inspectionGroupsTitle[]
   type = row
@@ -183,7 +214,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -217,7 +248,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -251,7 +282,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -285,7 +316,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -319,7 +350,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -353,7 +384,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -400,7 +431,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -417,16 +448,28 @@ inspectionGroups[]
     type = column
     element = div
     class = col-lg-4
-    answerInputs[]
-      suffix = Mpa
-      type = number
-      name = cont_2a_n_trd_i
-      step = 0.01
-    answerInputs[]
-      suffix = 
-      type = radio
-      name = cont_2a_trd_i
-      radioTemplate = inspection
+    children[]
+      type = row
+      element = div
+      class = row
+      children[]
+        type = column
+        element = div
+        class = col-lg-4
+        answerInputs[]
+          suffix = Mpa
+          type = number
+          name = cont_2a_n_trd_i
+          step = 0.01
+      children[]
+        type = column
+        element = div
+        class = col-lg-8
+        answerInputs[]
+          suffix = 
+          type = radio
+          name = cont_2a_trd_i
+          radioTemplate = inspection
 
 inspectionGroups[]
   type = row
@@ -439,7 +482,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -473,7 +516,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -490,16 +533,28 @@ inspectionGroups[]
     type = column
     element = div
     class = col-lg-4
-    answerInputs[]
-      suffix = Mpa
-      type = number
-      name = cont_2c_n_trd_i
-      step = 0.01
-    answerInputs[]
-      suffix = 
-      type = radio
-      name = cont_2c_trd_i
-      radioTemplate = inspection
+    children[]
+      type = row
+      element = div
+      class = row
+      children[]
+        type = column
+        element = div
+        class = col-lg-4
+        answerInputs[]
+          suffix = Mpa
+          type = number
+          name = cont_2c_n_trd_i
+          step = 0.01
+      children[]
+        type = column
+        element = div
+        class = col-lg-8
+        answerInputs[]
+          suffix = 
+          type = radio
+          name = cont_2c_trd_i
+          radioTemplate = inspection
 
 inspectionGroups[]
   type = row
@@ -512,7 +567,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -529,16 +584,28 @@ inspectionGroups[]
     type = column
     element = div
     class = col-lg-4
-    answerInputs[]
-      suffix = Mpa
-      type = number
-      name = cont_2d_n_trd_i
-      step = 0.01
-    answerInputs[]
-      suffix = 
-      type = radio
-      name = cont_2d_trd_i
-      radioTemplate = inspection
+    children[]
+      type = row
+      element = div
+      class = row
+      children[]
+        type = column
+        element = div
+        class = col-lg-4
+        answerInputs[]
+          suffix = Mpa
+          type = number
+          name = cont_2d_n_trd_i
+          step = 0.01
+      children[]
+        type = column
+        element = div
+        class = col-lg-8
+        answerInputs[]
+          suffix = 
+          type = radio
+          name = cont_2d_trd_i
+          radioTemplate = inspection
 
 inspectionGroups[]
   type = row
@@ -551,7 +618,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -568,16 +635,28 @@ inspectionGroups[]
     type = column
     element = div
     class = col-lg-4
-    answerInputs[]
-      suffix = Mpa
-      type = number
-      name = cont_2e_n_trd_i
-      step = 0.01
-    answerInputs[]
-      suffix = 
-      type = radio
-      name = cont_2e_trd_i
-      radioTemplate = inspection
+    children[]
+      type = column
+      element = div
+      class = row
+      children[]
+        type = column
+        element = div
+        class = col-lg-4
+        answerInputs[]
+          suffix = Mpa
+          type = number
+          name = cont_2e_n_trd_i
+          step = 0.01
+      children[]
+        type = column
+        element = div
+        class = col-lg-8
+        answerInputs[]
+          suffix = 
+          type = radio
+          name = cont_2e_trd_i
+          radioTemplate = inspection
 
 inspectionGroups[]
   groupId = 3
@@ -603,7 +682,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -637,7 +716,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -684,7 +763,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -718,7 +797,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -765,7 +844,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -799,7 +878,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -846,7 +925,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -880,7 +959,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -927,7 +1006,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -961,7 +1040,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -995,7 +1074,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -1029,7 +1108,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -1068,7 +1147,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -1115,7 +1194,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -1154,7 +1233,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -1193,7 +1272,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -1232,7 +1311,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -1271,7 +1350,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -1323,7 +1402,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -1370,7 +1449,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -1417,7 +1496,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -1469,7 +1548,7 @@ inspectionGroups[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -1531,7 +1610,7 @@ inspectionGroups2[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -1578,7 +1657,7 @@ inspectionGroups2[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -1625,7 +1704,7 @@ inspectionGroups2[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -1659,7 +1738,7 @@ inspectionGroups2[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -1693,7 +1772,7 @@ inspectionGroups2[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -1740,7 +1819,7 @@ inspectionGroups2[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -1774,7 +1853,7 @@ inspectionGroups2[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -1791,16 +1870,28 @@ inspectionGroups2[]
     type = column
     element = div
     class = col-lg-4
-    answerInputs[]
-      suffix = Mpa
-      type = number
-      name = cont_16b_n_trd_i
-      step = 0.01
-    answerInputs[]
-      suffix = 
-      type = radio
-      name = cont_16b_trd_i
-      radioTemplate = inspection
+    children[]
+      type = row
+      element = div
+      class = row
+      children[]
+        type = column
+        element = div
+        class = col-lg-4
+        answerInputs[]
+          suffix = Mpa
+          type = number
+          name = cont_16b_n_trd_i
+          step = 0.01
+      children[]
+        type = column
+        element = div
+        class = col-lg-8
+        answerInputs[]
+          suffix = 
+          type = radio
+          name = cont_16b_trd_i
+          radioTemplate = inspection
 
 inspectionGroups2[]
   type = row
@@ -1813,7 +1904,7 @@ inspectionGroups2[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -1847,7 +1938,7 @@ inspectionGroups2[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -1881,7 +1972,7 @@ inspectionGroups2[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -1915,7 +2006,7 @@ inspectionGroups2[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -1949,7 +2040,7 @@ inspectionGroups2[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -1983,7 +2074,7 @@ inspectionGroups2[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -2017,7 +2108,7 @@ inspectionGroups2[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -2051,7 +2142,7 @@ inspectionGroups2[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -2085,7 +2176,7 @@ inspectionGroups2[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -2119,7 +2210,7 @@ inspectionGroups2[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -2153,7 +2244,7 @@ inspectionGroups2[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -2187,7 +2278,7 @@ inspectionGroups2[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -2234,7 +2325,7 @@ inspectionGroups2[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -2268,7 +2359,7 @@ inspectionGroups2[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -2302,7 +2393,7 @@ inspectionGroups2[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -2336,7 +2427,7 @@ inspectionGroups2[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -2370,7 +2461,7 @@ inspectionGroups2[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -2404,7 +2495,7 @@ inspectionGroups2[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -2438,7 +2529,7 @@ inspectionGroups2[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -2495,7 +2586,7 @@ inspectionGroups3[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -2534,7 +2625,7 @@ inspectionGroups3[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -2573,7 +2664,7 @@ inspectionGroups3[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -2612,7 +2703,7 @@ inspectionGroups3[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -2651,7 +2742,7 @@ inspectionGroups3[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -2690,7 +2781,7 @@ inspectionGroups3[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -2729,7 +2820,7 @@ inspectionGroups3[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -2768,7 +2859,7 @@ inspectionGroups3[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -2807,7 +2898,7 @@ inspectionGroups3[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -2846,7 +2937,7 @@ inspectionGroups3[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -2898,7 +2989,7 @@ inspectionGroups3[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -2939,7 +3030,7 @@ inspectionGroups3[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -2980,7 +3071,7 @@ inspectionGroups3[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -3008,7 +3099,7 @@ inspectionGroups3[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -3027,7 +3118,7 @@ inspectionGroups3[]
       suffix = 
       type = radio
       name = cont_npd_trd_i
-      radioTemplate = inspection
+      radioTemplate = inspection2
 
 inspectionGroups3[]
   type = row
@@ -3040,7 +3131,7 @@ inspectionGroups3[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
@@ -3068,7 +3159,7 @@ inspectionGroups3[]
     children[]
       type = form-group
       element = div
-      class = form=group mb-0
+      class = form-group mb-0
       children[]
         type = text
         element = h5
