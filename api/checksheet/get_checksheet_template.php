@@ -59,6 +59,8 @@ function renderAnswer($answer, $radioTemplates)
 
         case 'radio':
 
+            $isFirst = true;
+
             foreach ($radioTemplates[$answer['radioTemplate']] as $choice) {
 
                 $id = $answer['name'] . '_' . $choice['value'];
@@ -75,7 +77,16 @@ function renderAnswer($answer, $radioTemplates)
                             class="form-control form-control-sm mb-2"
                             id="' . $id . '"
                             name="' . $answer['name'] . '"
-                            value="' . $choice['value'] . '">';
+                            value="' . $choice['value'] . '" ';
+                
+                if ($isFirst && $answer['required'] == "true") {
+                    // Do something special for the first item
+                    $isFirst = false; // Turn it off immediately
+
+                    echo 'required';
+                }
+
+                echo '>';
 
                 echo '
                     </div>
@@ -95,7 +106,14 @@ function renderAnswer($answer, $radioTemplates)
                         class="form-control mb-2"
                         id="' . $id . '"
                         name="' . $answer['name'] . '"
-                        step="' . $answer['step'] . '">';
+                        step="' . $answer['step'] . '" ';
+            
+            if ($answer['required'] == "true") {
+                // Do something special for the first item
+                echo 'required';
+            }
+
+            echo '>';
 
             if (!empty($answer['suffix'])) {
                 echo '<label class="ml-2" for="' . $id . '">' . $answer['suffix'] . '</label>';
@@ -123,7 +141,14 @@ function renderAnswer($answer, $radioTemplates)
                         class="form-control mb-2"
                         id="' . $id . '"
                         name="' . $answer['name'] . '"
-                        maxlength="' . $answer['maxlength'] . '">';
+                        maxlength="' . $answer['maxlength'] . '" ';
+            
+            if ($answer['required'] == "true") {
+                // Do something special for the first item
+                echo 'required';
+            }
+
+            echo '>';
 
             echo '
                 </div>
@@ -146,7 +171,14 @@ function renderAnswer($answer, $radioTemplates)
                         type="date"
                         class="form-control mb-2"
                         id="' . $id . '"
-                        name="' . $answer['name'] . '">';
+                        name="' . $answer['name'] . '" ';
+
+            if ($answer['required'] == "true") {
+                // Do something special for the first item
+                echo 'required';
+            }
+
+            echo '>';
 
             echo '
                 </div>
@@ -169,7 +201,14 @@ function renderAnswer($answer, $radioTemplates)
                         type="month"
                         class="form-control mb-2"
                         id="' . $id . '"
-                        name="' . $answer['name'] . '">';
+                        name="' . $answer['name'] . '" ';
+            
+            if ($answer['required'] == "true") {
+                // Do something special for the first item
+                echo 'required';
+            }
+
+            echo '>';
 
             echo '
                 </div>

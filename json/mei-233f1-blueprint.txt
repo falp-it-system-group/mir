@@ -9,15 +9,25 @@ document[]
   children[]
     type = column
     element = div
-    id = document_no
+    id = document_no_label
     class = col-sm-8
     text = MEI-233F1
+    answerInputs[]
+      type = hidden
+      id = document_no
+      name = document_no
+      value = MEI-030F1
   children[]
     type = column
     element = div
-    id = revision_no
+    id = revision_no_label
     class = col-sm-4
     text = 1
+    answerInputs[]
+      type = hidden
+      id = revision_no
+      name = revision_no
+      value = 1
 document[]
   type = row
   element = div
@@ -39,6 +49,7 @@ document[]
       id = car_model
       name = car_model
       maxlength = 255
+      required = true
   children[]
     type = column
     element = div
@@ -50,6 +61,7 @@ document[]
       id = shift
       name = shift
       maxlength = 255
+      required = true
 document[]
   type = row
   element = div
@@ -70,6 +82,7 @@ document[]
       type = month
       id = next_pm_date
       name = next_pm_date
+      required = true
   children[]
     type = column
     element = div
@@ -81,6 +94,7 @@ document[]
       id = next_pm_date_confirmed_by
       name = next_pm_date_confirmed_by
       maxlength = 255
+      required = true
   children[]
     type = column
     element = div
@@ -90,6 +104,7 @@ document[]
       suffix = 
       type = radio
       name = next_pm_date_confirmation
+      required = true
       radioTemplate = inspection2
 document[]
   type = row
@@ -112,6 +127,7 @@ document[]
       id = machine_name
       name = machine_name
       maxlength = 255
+      required = true
   children[]
     type = column
     element = div
@@ -123,6 +139,7 @@ document[]
       id = machine_no
       name = machine_no
       maxlength = 255
+      required = true
   children[]
     type = column
     element = div
@@ -134,6 +151,7 @@ document[]
       id = equipment_no
       name = equipment_no
       maxlength = 255
+      required = true
 
 descriptions[]
   type = row
@@ -211,6 +229,7 @@ inspectionGroupsTitle[]
       type = date
       id = inspection_date
       name = inspection_date
+      required = true
 
 inspectionGroups[]
   groupId = 1
@@ -257,6 +276,7 @@ inspectionGroups[]
       suffix = 
       type = radio
       name = cont_1a_trd_i
+      required = true
       radioTemplate = inspection
 
 inspectionGroups[]
@@ -291,6 +311,7 @@ inspectionGroups[]
       suffix = 
       type = radio
       name = cont_1b_trd_i
+      required = true
       radioTemplate = inspection
 
 inspectionGroups[]
@@ -325,6 +346,7 @@ inspectionGroups[]
       suffix = 
       type = radio
       name = cont_1c_trd_i
+      required = true
       radioTemplate = inspection
 
 inspectionGroups[]
@@ -359,6 +381,7 @@ inspectionGroups[]
       suffix = 
       type = radio
       name = cont_1d_trd_i
+      required = true
       radioTemplate = inspection
 
 inspectionGroups[]
@@ -393,6 +416,7 @@ inspectionGroups[]
       suffix = 
       type = radio
       name = cont_1e_trd_i
+      required = true
       radioTemplate = inspection
 
 inspectionGroups[]
@@ -427,6 +451,7 @@ inspectionGroups[]
       suffix = 
       type = radio
       name = cont_1f_trd_i
+      required = true
       radioTemplate = inspection
 
 inspectionGroups[]
@@ -475,6 +500,7 @@ inspectionGroups[]
       type = number
       name = cont_2-1a_n_trd_i
       step = 0.01
+      required = true
 
 inspectionGroups[]
   type = row
@@ -508,6 +534,7 @@ inspectionGroups[]
       suffix = 
       type = radio
       name = cont_2-1b_trd_i
+      required = true
       radioTemplate = inspection
 
 inspectionGroups[]
@@ -556,6 +583,7 @@ inspectionGroups[]
       type = number
       name = cont_2-2a_n_trd_i
       step = 0.001
+      required = true
 
 inspectionGroups[]
   type = row
@@ -589,6 +617,7 @@ inspectionGroups[]
       suffix = 
       type = radio
       name = cont_2-2b_trd_i
+      required = true
       radioTemplate = inspection
 
 inspectionGroups[]
@@ -637,6 +666,7 @@ inspectionGroups[]
       type = number
       name = cont_2-3a_n_trd_i
       step = 0.01
+      required = true
 
 inspectionGroups[]
   type = row
@@ -671,6 +701,7 @@ inspectionGroups[]
       type = number
       name = cont_2-3b_n_trd_i
       step = 0.01
+      required = true
 
 inspectionGroups[]
   type = row
@@ -705,6 +736,7 @@ inspectionGroups[]
       type = number
       name = cont_2-3c_n_trd_i
       step = 0.01
+      required = true
 
 inspectionGroups[]
   groupId = 3-1
@@ -752,6 +784,7 @@ inspectionGroups[]
       type = number
       name = cont_3-1a_n_trd_i
       step = 0.01
+      required = true
 
 inspectionGroups[]
   type = row
@@ -786,6 +819,7 @@ inspectionGroups[]
       type = number
       name = cont_3-1b_n_trd_i
       step = 0.01
+      required = true
 
 inspectionGroups[]
   groupId = 3-2
@@ -833,6 +867,7 @@ inspectionGroups[]
       type = number
       name = cont_3-2a_n_trd_i
       step = 0.01
+      required = true
 
 inspectionGroups[]
   type = row
@@ -867,6 +902,7 @@ inspectionGroups[]
       type = number
       name = cont_3-2b_n_trd_i
       step = 0.01
+      required = true
 
 inspectionGroups[]
   groupId = 4
@@ -913,6 +949,7 @@ inspectionGroups[]
       suffix = 
       type = radio
       name = cont_4a_trd_i
+      required = true
       radioTemplate = inspection
 
 inspectionGroups[]
@@ -947,6 +984,7 @@ inspectionGroups[]
       suffix = 
       type = radio
       name = cont_4b_trd_i
+      required = true
       radioTemplate = inspection
 
 inspectionGroups[]
@@ -981,6 +1019,7 @@ inspectionGroups[]
       suffix = 
       type = radio
       name = cont_4c_trd_i
+      required = true
       radioTemplate = inspection
 
 inspectionGroups[]
@@ -1015,6 +1054,7 @@ inspectionGroups[]
       suffix = 
       type = radio
       name = cont_4d_trd_i
+      required = true
       radioTemplate = inspection
 
 inspectionGroups[]
@@ -1049,6 +1089,7 @@ inspectionGroups[]
       suffix = 
       type = radio
       name = cont_4e_trd_i
+      required = true
       radioTemplate = inspection
 
 inspectionGroups[]
@@ -1083,6 +1124,7 @@ inspectionGroups[]
       suffix = 
       type = radio
       name = cont_4f_trd_i
+      required = true
       radioTemplate = inspection
 
 inspectionGroups2Title[]
@@ -1140,6 +1182,7 @@ inspectionGroups2[]
       suffix = 
       type = radio
       name = cont_13a_trd_i
+      required = true
       radioTemplate = inspection
 
 inspectionGroups2[]
@@ -1187,6 +1230,7 @@ inspectionGroups2[]
       suffix = 
       type = radio
       name = cont_14a_trd_i
+      required = true
       radioTemplate = inspection
 
 inspectionGroups2[]
@@ -1234,6 +1278,7 @@ inspectionGroups2[]
       suffix = 
       type = radio
       name = cont_15a_trd_i
+      required = true
       radioTemplate = inspection
 
 inspectionGroups2[]
@@ -1304,11 +1349,13 @@ inspectionGroups3[]
       suffix = 
       type = radio
       name = cont_20a_trd_i
+      required = true
       radioTemplate = inspection
     answerInputs[]
       suffix = 
       type = radio
       name = cont_20a_trd_i2
+      required = true
       radioTemplate = inspection
 
 inspectionGroups3[]
@@ -1343,11 +1390,13 @@ inspectionGroups3[]
       suffix = 
       type = radio
       name = cont_20b_trd_i
+      required = true
       radioTemplate = inspection
     answerInputs[]
       suffix = 
       type = radio
       name = cont_20b_trd_i2
+      required = true
       radioTemplate = inspection
 
 inspectionGroups3[]
@@ -1382,11 +1431,13 @@ inspectionGroups3[]
       suffix = 
       type = radio
       name = cont_20c_trd_i
+      required = true
       radioTemplate = inspection
     answerInputs[]
       suffix = 
       type = radio
       name = cont_20c_trd_i2
+      required = true
       radioTemplate = inspection
 
 inspectionGroups3[]
@@ -1421,11 +1472,13 @@ inspectionGroups3[]
       suffix = 
       type = radio
       name = cont_20d_trd_i
+      required = true
       radioTemplate = inspection
     answerInputs[]
       suffix = 
       type = radio
       name = cont_20d_trd_i2
+      required = true
       radioTemplate = inspection
 
 inspectionGroups3[]
@@ -1460,11 +1513,13 @@ inspectionGroups3[]
       suffix = 
       type = radio
       name = cont_20e_trd_i
+      required = true
       radioTemplate = inspection
     answerInputs[]
       suffix = 
       type = radio
       name = cont_20e_trd_i2
+      required = true
       radioTemplate = inspection
 
 inspectionGroups3[]
@@ -1499,11 +1554,13 @@ inspectionGroups3[]
       suffix = 
       type = radio
       name = cont_20f_trd_i
+      required = true
       radioTemplate = inspection
     answerInputs[]
       suffix = 
       type = radio
       name = cont_20f_trd_i2
+      required = true
       radioTemplate = inspection
 
 inspectionGroups3[]
@@ -1538,11 +1595,13 @@ inspectionGroups3[]
       suffix = 
       type = radio
       name = cont_20g_trd_i
+      required = true
       radioTemplate = inspection
     answerInputs[]
       suffix = 
       type = radio
       name = cont_20g_trd_i2
+      required = true
       radioTemplate = inspection
 
 inspectionGroups3[]
@@ -1577,11 +1636,13 @@ inspectionGroups3[]
       suffix = 
       type = radio
       name = cont_20h_trd_i
+      required = true
       radioTemplate = inspection
     answerInputs[]
       suffix = 
       type = radio
       name = cont_20h_trd_i2
+      required = true
       radioTemplate = inspection
 
 inspectionGroups3[]
@@ -1616,11 +1677,13 @@ inspectionGroups3[]
       suffix = 
       type = radio
       name = cont_20i_trd_i
+      required = true
       radioTemplate = inspection
     answerInputs[]
       suffix = 
       type = radio
       name = cont_20i_trd_i2
+      required = true
       radioTemplate = inspection
 
 inspectionGroups3[]
@@ -1655,11 +1718,13 @@ inspectionGroups3[]
       suffix = 
       type = radio
       name = cont_20j_trd_i
+      required = true
       radioTemplate = inspection
     answerInputs[]
       suffix = 
       type = radio
       name = cont_20j_trd_i2
+      required = true
       radioTemplate = inspection
 
 inspectionGroups3[]
@@ -1689,6 +1754,7 @@ inspectionGroups3[]
       id = cont_inspected_by
       name = cont_inspected_by
       maxlength = 255
+      required = true
 
 inspectionGroups3[]
   type = row
@@ -1717,3 +1783,4 @@ inspectionGroups3[]
       id = cont_checked_by
       name = cont_checked_by
       maxlength = 255
+      required = true

@@ -78,4 +78,44 @@
             }
         });
     }
+
+    document.getElementById('mir_checksheet_form').addEventListener('submit', e => {
+        e.preventDefault();
+        submit_checksheet();
+    });
+
+    const submit_checksheet = () => {
+        const formData = new FormData(document.getElementById('mir_checksheet_form'));
+
+        $.ajax({
+            url: '<?php echo $system; ?>/api/checksheet/submit_checksheet.php',
+            type: 'POST',
+            dataType: 'json',
+            cache: false,
+            contentType: false,  // Important for FormData
+            processData: false,  // Important for FormData
+            data: formData,
+            beforeSend: () => {
+                document.getElementById("btn_submit_checksheet").disabled = true;
+            },
+            success: function (response) {
+                // if (response.notification) {
+                //     Toast.fire({
+                //         icon: response.notification.icon,
+                //         title: response.notification.text,
+                //     });
+                //     if (response.notification.icon == 'success') {
+                //         document.getElementById('mir_checksheet_form').reset();
+                //     }
+                // }
+                console.log(response);
+                document.getElementById("btn_submit_checksheet").disabled = false;
+            },
+            error: function(xhr, status, error) {
+                // Handle error response
+                console.error('Submit Form submission failed:', error);
+                document.getElementById("btn_submit_checksheet").disabled = false; // Re-enable the button
+            }
+        });
+    }
 </script>
