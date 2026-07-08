@@ -120,12 +120,11 @@
           "text": "",
           "answerInputs": [
             {
-              "label": "Confirmed By Jr. Staff",
-              "type": "text",
-              "id": "next_pm_date_confirmed_by",
-              "name": "next_pm_date_confirmed_by",
-              "maxlength": "255",
-              "required": "true"
+              "suffix": "",
+              "type": "radio",
+              "name": "next_pm_date_confirmation",
+              "required": "true",
+              "radioTemplate": "inspection2"
             }
           ]
         },
@@ -136,11 +135,12 @@
           "text": "",
           "answerInputs": [
             {
-              "suffix": "",
-              "type": "radio",
-              "name": "next_pm_date_confirmation",
-              "required": "true",
-              "radioTemplate": "inspection2"
+              "label": "Confirmed By Jr. Staff",
+              "type": "text",
+              "id": "next_pm_date_confirmed_by",
+              "name": "next_pm_date_confirmed_by",
+              "maxlength": "255",
+              "required": "true"
             }
           ]
         }
@@ -1084,7 +1084,7 @@
               "type": "number",
               "name": "cont_3-1a_n_trd_i",
               "step": "0.01",
-              "required": "true"
+              "required": "false"
             }
           ]
         }
@@ -1133,7 +1133,7 @@
               "type": "number",
               "name": "cont_3-1b_n_trd_i",
               "step": "0.01",
-              "required": "true"
+              "required": "false"
             }
           ]
         }
@@ -1198,7 +1198,7 @@
               "type": "number",
               "name": "cont_3-2a_n_trd_i",
               "step": "0.01",
-              "required": "true"
+              "required": "false"
             }
           ]
         }
@@ -1247,7 +1247,7 @@
               "type": "number",
               "name": "cont_3-2b_n_trd_i",
               "step": "0.01",
-              "required": "true"
+              "required": "false"
             }
           ]
         }
@@ -1638,7 +1638,7 @@
               "suffix": "",
               "type": "radio",
               "name": "cont_13a_trd_i",
-              "required": "true",
+              "required": "false",
               "radioTemplate": "inspection"
             }
           ]
@@ -1703,7 +1703,7 @@
               "suffix": "",
               "type": "radio",
               "name": "cont_14a_trd_i",
-              "required": "true",
+              "required": "false",
               "radioTemplate": "inspection"
             }
           ]
@@ -1768,7 +1768,7 @@
               "suffix": "",
               "type": "radio",
               "name": "cont_15a_trd_i",
-              "required": "true",
+              "required": "false",
               "radioTemplate": "inspection"
             }
           ]

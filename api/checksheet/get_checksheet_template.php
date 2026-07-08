@@ -109,7 +109,6 @@ function renderAnswer($answer, $radioTemplates)
                         step="' . $answer['step'] . '" ';
             
             if ($answer['required'] == "true") {
-                // Do something special for the first item
                 echo 'required';
             }
 
@@ -117,6 +116,10 @@ function renderAnswer($answer, $radioTemplates)
 
             if (!empty($answer['suffix'])) {
                 echo '<label class="ml-2" for="' . $id . '">' . $answer['suffix'] . '</label>';
+            }
+
+            if ($answer['required'] == "true") {
+                echo '<label style="color: red;">*</label>';
             }
 
             echo '
@@ -134,6 +137,10 @@ function renderAnswer($answer, $radioTemplates)
             
             if (!empty($answer['label'])) {
                 echo '<label>' . $answer['label'] . '</label>';
+            }
+            
+            if ($answer['required'] == "true") {
+                echo '<label style="color: red;">*</label>';
             }
 
             echo '<input
@@ -167,6 +174,10 @@ function renderAnswer($answer, $radioTemplates)
                 echo '<label>' . $answer['label'] . '</label>';
             }
 
+            if ($answer['required'] == "true") {
+                echo '<label style="color: red;">*</label>';
+            }
+
             echo '<input
                         type="date"
                         class="form-control mb-2"
@@ -195,6 +206,10 @@ function renderAnswer($answer, $radioTemplates)
             
             if (!empty($answer['label'])) {
                 echo '<label>' . $answer['label'] . '</label>';
+            }
+
+            if ($answer['required'] == "true") {
+                echo '<label style="color: red;">*</label>';
             }
 
             echo '<input
@@ -247,12 +262,16 @@ $stmt->execute();
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 if (!$row) {
+    $conn = NULL;
     exit("No Checksheet Template Found! Call IT Personnel Immediately!!!");
 }
 
 $data = json_decode($row['document_json'], true);
 
 $radioTemplates = $data['radioTemplate'];
+
+// Checksheet ID generation
+echo '<input type="hidden" id="checksheet_id" name="checksheet_id" value="' . str_replace('.', '', uniqid('MIR-', true)) . '">';
 
 foreach ($data['document'] as $group) {
     renderNode($group, $radioTemplates);
@@ -279,3 +298,5 @@ renderNode($data['inspectionGroups3Title'][0], $radioTemplates);
 foreach ($data['inspectionGroups3'] as $group) {
     renderNode($group, $radioTemplates);
 }
+
+$conn = NULL;

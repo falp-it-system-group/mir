@@ -4453,14 +4453,14 @@
           "answerInputs": [
             {
               "type": "month",
-              "id": "cont_npd_d_trd_i",
-              "name": "cont_npd_d_trd_i",
+              "id": "next_pm_date",
+              "name": "next_pm_date",
               "required": "true"
             },
             {
               "suffix": "",
               "type": "radio",
-              "name": "cont_npd_trd_i",
+              "name": "next_pm_date_confirmation",
               "required": "true",
               "radioTemplate": "inspection2"
             }
@@ -4486,7 +4486,7 @@
                 {
                   "type": "text",
                   "element": "h5",
-                  "id": "cont_inspected_by_label",
+                  "id": "inspected_by_label",
                   "class": "",
                   "text": "Inspected By: (Associate)"
                 }
@@ -4501,8 +4501,8 @@
           "answerInputs": [
             {
               "type": "text",
-              "id": "cont_inspected_by",
-              "name": "cont_inspected_by",
+              "id": "inspected_by",
+              "name": "inspected_by",
               "maxlength": "255",
               "required": "true"
             }
@@ -4528,7 +4528,7 @@
                 {
                   "type": "text",
                   "element": "h5",
-                  "id": "cont_confirmed_by_label",
+                  "id": "confirmed_by_label",
                   "class": "",
                   "text": "Confirmed By: (Jr. Staff or Above)"
                 }
@@ -4543,8 +4543,8 @@
           "answerInputs": [
             {
               "type": "text",
-              "id": "cont_confirmed_by",
-              "name": "cont_confirmed_by",
+              "id": "confirmed_by",
+              "name": "confirmed_by",
               "maxlength": "255",
               "required": "true"
             }

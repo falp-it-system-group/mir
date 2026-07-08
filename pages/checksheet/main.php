@@ -19,7 +19,7 @@
     <div class="" style="width:85%;">
         <div class="row mb-2">
             <div class="col-6">
-                <label>Checksheet Type</label>
+                <label>Checksheet Type</label><label style="color: red;">*</label>
                 <select class="form-control" name="opt" id="checksheet_type_opt" onchange="get_checksheet_template()" required></select>
             </div>
         </div>
@@ -85,7 +85,20 @@
     });
 
     const submit_checksheet = () => {
-        const formData = new FormData(document.getElementById('mir_checksheet_form'));
+        const form = document.getElementById('mir_checksheet_form');
+        const formData = new FormData(form);
+
+        // Get all unique radio group names
+        const radioNames = [...new Set(
+            [...form.querySelectorAll('input[type="radio"]')]
+                .map(r => r.name)
+        )];
+
+        radioNames.forEach(name => {
+            if (!form.querySelector(`input[name="${name}"]:checked`)) {
+                formData.append(name, '');
+            }
+        });
 
         $.ajax({
             url: '<?php echo $system; ?>/api/checksheet/submit_checksheet.php',
@@ -99,16 +112,15 @@
                 document.getElementById("btn_submit_checksheet").disabled = true;
             },
             success: function (response) {
-                // if (response.notification) {
-                //     Toast.fire({
-                //         icon: response.notification.icon,
-                //         title: response.notification.text,
-                //     });
-                //     if (response.notification.icon == 'success') {
-                //         document.getElementById('mir_checksheet_form').reset();
-                //     }
-                // }
-                console.log(response);
+                if (response.notification) {
+                    Toast.fire({
+                        icon: response.notification.icon,
+                        title: response.notification.text,
+                    });
+                    if (response.notification.icon == 'success') {
+                        document.getElementById('mir_checksheet_form').reset();
+                    }
+                }
                 document.getElementById("btn_submit_checksheet").disabled = false;
             },
             error: function(xhr, status, error) {

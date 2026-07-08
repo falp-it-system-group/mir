@@ -89,23 +89,23 @@ document[]
     class = col-3
     text = 
     answerInputs[]
-      label = Confirmed By Jr. Staff
-      type = text
-      id = next_pm_date_confirmed_by
-      name = next_pm_date_confirmed_by
-      maxlength = 255
+      suffix = 
+      type = radio
+      name = next_pm_date_confirmation
       required = true
+      radioTemplate = inspection2
   children[]
     type = column
     element = div
     class = col-3
     text = 
     answerInputs[]
-      suffix = 
-      type = radio
-      name = next_pm_date_confirmation
+      label = Confirmed By Jr. Staff
+      type = text
+      id = next_pm_date_confirmed_by
+      name = next_pm_date_confirmed_by
+      maxlength = 255
       required = true
-      radioTemplate = inspection2
 document[]
   type = row
   element = div
@@ -784,7 +784,7 @@ inspectionGroups[]
       type = number
       name = cont_3-1a_n_trd_i
       step = 0.01
-      required = true
+      required = false
 
 inspectionGroups[]
   type = row
@@ -819,7 +819,7 @@ inspectionGroups[]
       type = number
       name = cont_3-1b_n_trd_i
       step = 0.01
-      required = true
+      required = false
 
 inspectionGroups[]
   groupId = 3-2
@@ -867,7 +867,7 @@ inspectionGroups[]
       type = number
       name = cont_3-2a_n_trd_i
       step = 0.01
-      required = true
+      required = false
 
 inspectionGroups[]
   type = row
@@ -902,7 +902,7 @@ inspectionGroups[]
       type = number
       name = cont_3-2b_n_trd_i
       step = 0.01
-      required = true
+      required = false
 
 inspectionGroups[]
   groupId = 4
@@ -1182,7 +1182,7 @@ inspectionGroups2[]
       suffix = 
       type = radio
       name = cont_13a_trd_i
-      required = true
+      required = false
       radioTemplate = inspection
 
 inspectionGroups2[]
@@ -1230,7 +1230,7 @@ inspectionGroups2[]
       suffix = 
       type = radio
       name = cont_14a_trd_i
-      required = true
+      required = false
       radioTemplate = inspection
 
 inspectionGroups2[]
@@ -1278,7 +1278,7 @@ inspectionGroups2[]
       suffix = 
       type = radio
       name = cont_15a_trd_i
-      required = true
+      required = false
       radioTemplate = inspection
 
 inspectionGroups2[]
