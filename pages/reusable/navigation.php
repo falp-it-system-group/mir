@@ -26,6 +26,8 @@
 	<div class="collapse navbar-collapse order-3" id="navbarCollapse">
 		<!-- Left navbar links -->
 		<ul class="navbar-nav">
+			<?php if (isset($_SESSION['user']) && $_SESSION['user'] != null) {?>
+
 			<?php if ($_SERVER['REQUEST_URI'] == $system . '/pages/checksheet/') { ?>
 			<li class="nav-item"><a class="nav-link active" href="<?php echo $system . '/pages/checksheet/' ?>">Checksheet</a></li>
 			<?php } else { ?>
@@ -35,6 +37,16 @@
 			<li class="nav-item">
 				<a data-toggle="modal" data-target="#logout_modal" class="nav-link"><i class="fas fa-sign-out-alt"></i> Logout</a>
 			</li>
+
+			<?php } else { ?>
+
+			<?php if ($_SERVER['REQUEST_URI'] == $system . '/pages/viewer/checksheets/') { ?>
+			<li class="nav-item"><a class="nav-link active" href="<?php echo $system . '/pages/viewer/checksheets/' ?>">Checksheets</a></li>
+			<?php } else { ?>
+			<li class="nav-item"><a class="nav-link" href="<?php echo $system . '/pages/viewer/checksheets/' ?>">Checksheets</a></li>
+			<?php } ?>
+
+			<?php } ?>
 		</ul>
 	</div>
 

@@ -1,7 +1,7 @@
 <?php
     include '../common/sessions.php';
     include '../common/consts.php';
-    $_SESSION['user_data'] = null;
+    $_SESSION['user'] = null;
 
     $notification = [
         "icon" => "warning",
