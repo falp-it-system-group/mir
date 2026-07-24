@@ -1,3 +1,34 @@
+<style>
+    .table-container {
+        overflow: auto;
+        max-width: 100%;
+    }
+
+    #checksheetsTable {
+        border-collapse: collapse;
+    }
+
+    #checksheetsTable th,
+    #checksheetsTable td {
+        border: 1px solid #ddd;
+        white-space: nowrap;
+    }
+
+    /* Freeze first column */
+    #checksheetsTable th:first-child,
+    #checksheetsTable td:first-child {
+        position: sticky;
+        left: 0;
+        background: #fff;
+        z-index: 2;
+    }
+
+    /* Keep the top-left corner above everything */
+    #checksheetsTable tr:first-child th:first-child {
+        z-index: 3;
+    }
+</style>
+
 <!-- Content Header (Page header) -->
 <div class="content-header">
     <div class="row mb-2 ml-1 mr-1">
@@ -75,7 +106,7 @@
                 </div>
                 <div id="checksheetsTableRes" class="table-responsive"
                     style="max-height: 500px; overflow: auto; display:inline-block;">
-                    <table id="checksheetsTable" class="table table-sm table-sm-custom table-bordered table-head-fixed table-foot-fixed text-nowrap table-hover">
+                    <table id="checksheetsTable" class="table table-sm table-sm-custom table-bordered table-foot-fixed text-nowrap table-hover">
                         <thead id="checksheetsColumns" style="text-align: center;"></thead>
                         <tbody id="checksheetsData" style="text-align: center;"></tbody>
                     </table>
@@ -140,6 +171,37 @@
         get_checksheets();
     });
 
+    const get_question_label = () => {
+        let document_no = document.getElementById("checksheet_type_opt").value;
+
+        $.ajax({
+            url: '<?php echo $system; ?>/api/checksheet/get_question_label.php',
+            type: 'GET',
+            cache: false,
+            data: {
+                document_no: document_no
+            },
+            success: function (response) {
+                // Iterate through the JSON and update matching elements
+                Object.keys(response).forEach(col => {
+                    // Construct the ID based on your format
+                    const elementId = `chkshtcol_${col}`;
+                    
+                    // Find the element with that ID
+                    const element = document.getElementById(elementId);
+                    
+                    // If element exists, update its innerHTML
+                    if (element) {
+                        element.innerHTML = response[col];
+                    }
+                });
+            },
+            error: function () {
+                console.error('error occured');
+            }
+        });
+    }
+
     const get_checksheets = () => {
         let date_time_from = document.getElementById("date_time_from_search").value;
         let date_time_to = document.getElementById("date_time_to_search").value;
@@ -176,28 +238,47 @@
                     const columns_except = ['id', 'revision_no'];
 
                     const columns = response.columns;
-                    console.log(columns);
-                    
-                    // Create table header
-                    const header = columns.map(col => `<th>${col}</th>`).join('');
-                    document.getElementById("checksheetsColumns").insertAdjacentHTML('beforeend', header);
+                    const data = response.data;
 
-                    // Create table body
-                    const rows = response.data.map(row => {
-                        const cells = columns.map(col => {
+                    let html = "";
+
+                    // Header
+                    html += "<tr><th>Fields</th>";
+
+                    data.forEach((row, i) => {
+                        html += `<th>${i + 1}</th>`;
+                    });
+
+                    html += "</tr>";
+
+                    // Body
+                    columns.forEach(col => {
+
+                        if (col == 'id') {
+                            return;
+                        }
+
+                        html += `<tr><th id="chkshtcol_${col}">${col}</th>`;
+
+                        data.forEach(row => {
+
                             let value = row[col];
 
-                            // Convert only numeric values 1-4
-                            if ([1, 2, 3, 4].includes(Number(value)) && !columns_except.includes(col)) {
+                            if ([1,2,3,4].includes(Number(value)) && !columns_except.includes(col)) {
                                 value = symbols[Number(value)];
                             }
 
-                            return `<td>${value ?? ''}</td>`;
-                        }).join('');
+                            html += `<td>${value ?? ""}</td>`;
+                        });
 
-                        return `<tr>${cells}</tr>`;
-                    }).join('');
-                    document.getElementById("checksheetsData").insertAdjacentHTML('beforeend', rows);
+                        html += "</tr>";
+
+                    });
+
+                    document.getElementById("checksheetsColumns").innerHTML = html;
+                    document.getElementById("checksheetsData").innerHTML = "";
+
+                    get_question_label();
 
                     sessionStorage.setItem('mir_chksht_date_time_from_search', date_time_from);
                     sessionStorage.setItem('mir_chksht_date_time_to_search', date_time_to);

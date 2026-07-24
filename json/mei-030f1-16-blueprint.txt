@@ -2799,7 +2799,7 @@ inspectionGroups3[]
         element = h5
         id = cont_q20ad
         class = 
-        text = 17
+        text = 19
   children[]
     type = column
     element = div
@@ -3101,7 +3101,7 @@ inspectionGroups3[]
     answerInputs[]
       suffix = 
       type = radio
-      name = cont_20ab_trd_i
+      name = cont_20b_trd_i
       required = true
       radioTemplate = inspection
 

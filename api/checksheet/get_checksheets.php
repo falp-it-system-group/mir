@@ -63,7 +63,11 @@ try {
         $data[] = array_merge($row, $json);
     }
 
-    $columns = array_keys($data[0]);
+    $columns = [];
+
+    if (isset($data[0])) {
+        $columns = array_keys($data[0]);
+    }
 
     $response = [
         "columns" => $columns,
